@@ -1,0 +1,23 @@
+<div>
+    <input type="number" name="something" id="something_id" #textF>
+    <button (click)="sendMsg(textF.value)">Click Me</button>
+</div>
+
+<div>
+    <h1>
+        = {{displayValue}}
+    </h1>
+</div>
+
+<div>
+    <button (click)="albumFunction()">Click for Album</button>
+</div>
+
+<div>
+    <div *ngFor="let item of album_data">
+        <div >
+            {{ item.userId}}
+        </div>
+    </div>
+   
+</div>

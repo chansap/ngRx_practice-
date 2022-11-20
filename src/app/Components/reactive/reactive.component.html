@@ -1,0 +1,18 @@
+{{demoVar}}<br/>
+
+<input type="text" [value]="value" #just  [(ngModel)]="nxtVar">
+{{nxtVar}}
+
+<div [ngClass]=" flag?'first':'secnd' ">
+    Testing on div
+</div>
+
+<div [style.color]=" flag?'red':'green' ">
+    Testing on another div
+</div>
+
+<div #just>
+    Template testing
+</div>
+
+<button (click)="onclick(just.value)">CLICK ME</button>
